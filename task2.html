@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AITU Hack 2026</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container my-4">
+    <div class="card ticket">
+        <h4 class="head">AITU Hack 2026</h4>
+
+        <div class="card-body">
+            <form>
+                <div class="mb-3">
+                    <label for="name">Full name *</label>
+                    <input class="form-control" id="name" type="text"
+                           minlength="2" maxlength="40" required>
+                    <div class="invalid-feedback">Enter 2–40 characters.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email">University email *</label>
+                    <input class="form-control" id="email" type="email" required>
+                    <div class="invalid-feedback">Enter a valid email.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="age">Age *</label>
+                    <input class="form-control" id="age" type="number"
+                           min="16" max="30" step="1" required>
+                    <div class="invalid-feedback">Age must be 16–30.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="team">Team size *</label>
+                    <input class="form-control" id="team" type="number"
+                           min="1" max="4" step="1" required>
+                    <div class="invalid-feedback">Choose 1–4 people.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="track">Track *</label>
+                    <select class="form-select" id="track" required>
+                        <option value="">Choose...</option>
+                        <option>Web</option>
+                        <option>Mobile</option>
+                        <option>AI</option>
+                        <option>GameDev</option>
+                    </select>
+                    <div class="invalid-feedback">Choose a track.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="day">Arrival day *</label>
+                    <input class="form-control" id="day" type="date"
+                           min="2026-11-20" max="2026-11-22" required>
+                    <div class="invalid-feedback">Choose November 20–22.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="time">Check-in time *</label>
+                    <input class="form-control" id="time" type="time"
+                           min="09:00" max="18:00" step="1800" required>
+                    <div class="invalid-feedback">Choose time from 09:00 to 18:00 every 30 minutes.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="fee">Entry fee (₸) *</label>
+                    <input class="form-control" id="fee" type="number"
+                           min="0" max="5000" step="500" required>
+                    <div class="invalid-feedback">Use 0–5000, in steps of 500.</div>
+                </div>
+
+                <p>Experience level *</p>
+
+                <div class="mb-3">
+                    <input type="radio" id="beginner" name="level" required>
+                    <label for="beginner">Beginner</label>
+
+                    <input type="radio" id="middle" name="level">
+                    <label for="middle">Intermediate</label>
+
+                    <input type="radio" id="expert" name="level">
+                    <label for="expert">Advanced</label>
+                </div>
+
+                <div class="mb-3">
+                    <label for="github">GitHub profile</label>
+                    <input class="form-control" id="github" type="url">
+                    <div class="invalid-feedback">Enter a full link starting with https://</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="pass">Password *</label>
+                    <input class="form-control" id="pass" type="password"
+                           minlength="8" maxlength="20" required>
+                    <div class="invalid-feedback">Use 8–20 characters.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="motivation">Motivation *</label>
+                    <textarea class="form-control" id="motivation"
+                              minlength="50" maxlength="300" required></textarea>
+                    <div class="invalid-feedback">Write 50–300 characters.</div>
+                </div>
+
+                <div class="mb-3">
+                    <input type="checkbox" id="rules" required>
+                    <label for="rules">I agree with the rules *</label>
+                    <div class="invalid-feedback">You must agree with the rules.</div>
+                </div>
+
+                <button class="btn find" type="submit">Register</button>
+                <button class="btn clear" type="reset">Clear</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

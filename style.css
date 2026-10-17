@@ -1,0 +1,249 @@
+body {
+    background: #E6EFEC;
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: #16302B;
+}
+
+.ticket {
+    border: none;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(15, 107, 95, 0.18);
+}
+
+.head {
+    background: #0F6B5F;
+    color: white;
+    padding: 24px 28px;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+.form-control,
+.form-select {
+    background: #F4F7F5;
+    border: 1px solid #E6EFEC;
+    border-radius: 14px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #0F6B5F;
+    box-shadow: 0 0 5px #0F6B5F;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #0F6B5F;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    display: inline;
+    margin-right: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+.btn {
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+.find {
+    background: #F2A93B;
+    border: none;
+    color: #16302B;
+}
+
+.find:hover {
+    background: #e59a25;
+}
+
+.clear {
+    background: white;
+    border: 1px solid #0F6B5F;
+    color: #16302B;
+}
+
+.clear:hover {
+    background: #E6EFEC;
+}
+
+.invalid-feedback {
+    display: none;
+}
+
+.form-control:user-invalid ~ .invalid-feedback,
+.form-select:user-invalid ~ .invalid-feedback,
+input[type="checkbox"]:user-invalid ~ .invalid-feedback {
+    display: block;
+}
+
+@media (max-width: 576px) {
+    .card-body {
+        padding: 15px;
+    }
+
+    .buttons {
+        flex-direction: column-reverse;
+    }
+
+    .buttons button {
+        width: 100%;
+    }
+}
+
+
+.card-body { padding: 32px 28px; }
+
+label,
+legend {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #16302B;
+}
+
+legend { float: none; width: auto; }
+
+
+.trip {
+    display: inline-flex;
+}
+
+.trip .trip-btn {
+    display: block;
+    margin: 0;
+    border: 1.5px solid #0F6B5F;
+    background: #fff;
+    color: #0F6B5F;
+    padding: 10px 28px;
+    font-weight: 600;
+    border-radius: 0;
+    transition: none;
+}
+
+.trip .btn-check:first-of-type + .trip-btn {
+    border-radius: 25px 0 0 25px;
+    border-right-width: 0;
+}
+
+.trip .trip-btn:last-of-type {
+    border-radius: 0 25px 25px 0;
+}
+
+.trip .trip-btn:hover {
+    background: #E6EFEC;
+    color: #0F6B5F;
+}
+
+.trip .btn-check:checked + .trip-btn,
+.trip .btn-check:checked + .trip-btn:hover {
+    background: #0F6B5F;
+    border-color: #0F6B5F;
+    color: #fff;
+}
+
+.trip .btn-check:focus-visible + .trip-btn {
+    outline: 3px solid #F2A93B;
+    outline-offset: 2px;
+}
+
+.form-floating > .form-control {
+    height: calc(3.6rem + 2px);
+    padding-top: 1.6rem;
+}
+
+.form-floating > .form-control::placeholder {
+    color: #16302B;
+    opacity: 1;
+}
+
+.form-floating > label {
+    font-weight: 400;
+    color: #5d736d;
+    opacity: .9;
+    transform: scale(.85) translateY(-.5rem) translateX(.15rem);
+}
+
+/* phone prefix */
+.prefix {
+    background: #0F6B5F;
+    border: 1px solid #0F6B5F;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 14px 0 0 14px;
+}
+
+.input-group > .form-control {
+    border-radius: 0 14px 14px 0;
+}
+
+/* radios, checkbox, switch */
+.form-check-input:checked {
+    background-color: #0F6B5F;
+    border-color: #0F6B5F;
+}
+
+.form-check-input:focus {
+    border-color: #0F6B5F;
+    box-shadow: 0 0 0 .25rem rgba(15, 107, 95, .25);
+}
+
+.form-check-label { font-weight: 400; }
+
+.form-switch .form-check-input { cursor: pointer; }
+
+/* buttons */
+.btn { font-weight: 700; }
+.find, .find:hover, .find:focus { color: #16302B; }
+
+.btn:focus-visible {
+    outline: 3px solid #0F6B5F;
+    outline-offset: 2px;
+}
+
+@media (max-width: 767.98px) {
+    .buttons { flex-direction: column-reverse; }
+    .buttons button { width: 100%; padding: 14px 20px; }
+}
+
+@media (max-width: 576px) {
+    .card-body { padding: 20px 16px; }
+    .head { padding: 20px; font-size: 1.35rem; }
+    .trip { display: flex; }
+    .trip .trip-btn { flex: 1; }
+}
+
+
+.form-control:user-invalid,
+.form-select:user-invalid,
+.form-check-input:user-invalid {
+    border-color: #dc3545;
+}
+
+.form-control:user-invalid:focus,
+.form-select:user-invalid:focus,
+.form-check-input:user-invalid:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 5px #dc3545;
+}
+
+input[type="checkbox"]:user-invalid,
+input[type="radio"]:user-invalid {
+    outline: 2px solid #dc3545;
+    outline-offset: 2px;
+}
